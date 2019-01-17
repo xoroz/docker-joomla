@@ -1,5 +1,4 @@
-#FROM php:%%PHP_VERSION%%-%%VARIANT%%
-FROM php:7-2
+FROM php:7.2-apache
 LABEL maintainer="felipe.ferreira@iit.it"
 
 # Disable remote database security requirements.
