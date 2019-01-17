@@ -1,9 +1,12 @@
-FROM php:7.2-apache
+#FROM php:7.2-apache
+FROM php7.2/apache
 LABEL maintainer="felipe.ferreira@iit.it"
 
 # Disable remote database security requirements.
 ENV JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1
+ENV VARIANT_EXTRAS=
 %%VARIANT_EXTRAS%%
+
 # Install PHP extensions
 RUN set -ex; \
 	\
