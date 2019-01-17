@@ -1,4 +1,4 @@
-FROM php:%%PHP_VERSION%%-%%VARIANT%%
+FROM php:7-%%VARIANT%%
 LABEL maintainer="Michael Babker <michael.babker@joomla.org> (@mbabker)"
 
 # Disable remote database security requirements.
